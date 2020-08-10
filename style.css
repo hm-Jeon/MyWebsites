@@ -22,7 +22,7 @@
     text-decoration: none;
   }
   .toggle {
-    margin-right: 10px;
+    margin-right: 5px;
     float: right;
   }
   #websiteList {
@@ -52,6 +52,10 @@
     }
     #websites {
       margin-right: 10px;
+    }
+    #websiteList {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
     }
     #websites ul {
       margin-bottom: 35px;
