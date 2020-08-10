@@ -22,7 +22,8 @@
     text-decoration: none;
   }
   .toggle {
-    margin-left: 10px;
+    margin-right: 10px;
+    float: right;
   }
   #websiteList {
     display: grid;
