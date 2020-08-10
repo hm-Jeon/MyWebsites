@@ -1,37 +1,43 @@
-function nightDayHandler(self){
-  var target = document.querySelector('body');
-  var links = document.querySelectorAll('a');
-  var allElements = document.querySelectorAll('*');
-  if(self.value === '나이트 모드') {
-    target.style.backgroundColor='black';
-    target.style.color='white';
-    self.value = '기본 모드';
+var body = {
+  setColor: function(color) {
+    var target = document.querySelector('body');
+    target.style.color=color;
+  },
+  setBackgroundColor: function(color) {
+    var target = document.querySelector('body');
+    target.style.backgroundColor=color;
+  }
+}
 
+var links = {
+  setColor: function (color) {
+    var alist = document.querySelectorAll('a');
     var i = 0;
-    for(i; i < links.length; i++){
-      links[i].style.color='white';
-    }
-
-    for(i = 0; i < allElements.length; i++){
-      if(allElements[i].id != "toggle"){
-          allElements[i].style.borderColor = 'white';
-      }
+    while(i < alist.length){
+        alist[i].style.color = color;
+        i++;
     }
   }
-  else {
-    target.style.backgroundColor='white';
-    target.style.color='black';
-    self.value = '나이트 모드';
+}
 
-    var i = 0;
-    for(i; i < links.length; i++){
-      links[i].style.color='black';
-    }
+function syncValue(mode) {
+  var tlist = document.querySelectorAll('.toggle');
+  for(i = 0; i < tlist.length; i++){
+    tlist[i].value = mode;
+  }
+}
 
-    for(i = 0; i < allElements.length; i++){
-      if(allElements[i].id != "toggle"){
-          allElements[i].style.borderColor = 'black';
-      }
-    }
+function nightDayHandler(self) {
+  if(self.value == '다크 모드') {
+    body.setColor('white');
+    body.setBackgroundColor('black');
+    links.setColor('white');
+    syncValue('기본 모드');
+  }
+  else {  // self.value == '기본모드'
+    body.setColor('black');
+    body.setBackgroundColor('white');
+    links.setColor('black');
+    syncValue('다크 모드');
   }
 }

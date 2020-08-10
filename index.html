@@ -8,27 +8,33 @@
 
   <body>
     <h1><a href="index.html">HTML CSS JavaScript</a></h1>
-    <input id="toggle" type="button" value="나이트 모드" onclick="
+    <input class="toggle" type="button" value="다크 모드" onclick="
       nightDayHandler(this);
     ">
-    <h2>Websites</h2>
-    <ul>
-      <li><a href="C:\Users\82105\Documents\Web\index.html" target="_blank">index.html - Welcome</a></li>
-      <li><a href="C:\Users\82105\Documents\Web\1.html" target="_blank">1.html - HTML</a></li>
-      <li><a href="C:\Users\82105\Documents\Web\2.html" target="_blank">2.html - CSS</a></li>
-      <li><a href="C:\Users\82105\Documents\Web\3.html" target="_blank">3.html - JavaScript</a></li>
-    </ul>
-    <img src="image.jpg" width="100%" id="image">
-    <h2>동영상 강의</h2>
-    <ul id="videoList">
-      <li><a href="https://www.youtube.com/watch?v=tZooW6PritE&list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb" target="_blank">HTML</a></li>
-      <li><a href="https://www.youtube.com/watch?v=OGFgdro160I&list=PLuHgQVnccGMDUzDDCKW-pCZQY-MMCX5yB" target="_blank">HTML2</a></li>
-      <li><a href="https://www.youtube.com/watch?v=Ok0bBJPtgJI&list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B" target="_blank">CSS</a></li>
-      <li><a href="https://www.youtube.com/watch?v=ONcmkf07EuI&list=PLuHgQVnccGMDaVaBmkX0qfB45R_bYrV62" target="_blank">CSS2</a></li>
-      <li><a href="https://www.youtube.com/watch?v=dPRtcRwKo-Y&list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf" target="_blank">JavaScript</a></li>
-    </ul>
-    <div id="video">
-      <iframe width="100%" src="https://www.youtube.com/embed/tZooW6PritE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="grid">
+      <div id="websites">
+        <h2>Websites</h2>
+        <ul>
+          <li><a href="C:\Users\82105\Documents\Web\index.html" target="_blank">index.html - Welcome</a></li>
+          <li><a href="C:\Users\82105\Documents\Web\1.html" target="_blank">1.html - HTML</a></li>
+          <li><a href="C:\Users\82105\Documents\Web\2.html" target="_blank">2.html - CSS</a></li>
+          <li><a href="C:\Users\82105\Documents\Web\3.html" target="_blank">3.html - JavaScript</a></li>
+        </ul>
+        <img src="image.jpg" width="100%" id="image">
+      </div>
+      <div id="videos">
+        <h2>동영상 강의</h2>
+        <ul id="videoList">
+          <li><a href="https://www.youtube.com/watch?v=tZooW6PritE&list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb" target="_blank">HTML</a></li>
+          <li><a href="https://www.youtube.com/watch?v=OGFgdro160I&list=PLuHgQVnccGMDUzDDCKW-pCZQY-MMCX5yB" target="_blank">HTML2</a></li>
+          <li><a href="https://www.youtube.com/watch?v=Ok0bBJPtgJI&list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B" target="_blank">CSS</a></li>
+          <li><a href="https://www.youtube.com/watch?v=ONcmkf07EuI&list=PLuHgQVnccGMDaVaBmkX0qfB45R_bYrV62" target="_blank">CSS2</a></li>
+          <li><a href="https://www.youtube.com/watch?v=dPRtcRwKo-Y&list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf" target="_blank">JavaScript</a></li>
+        </ul>
+        <div id="video">
+          <iframe width="100%" src="https://www.youtube.com/embed/tZooW6PritE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
     <script type="text/javascript" src="script.js"></script>
   </body>
