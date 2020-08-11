@@ -1,14 +1,19 @@
   body {
     margin: 10px;
+    padding: 10px;
+    border: 3px solid black;
+    transition-duration: 0.4s;
   }
   h1 {
     font-size: 45px;
     text-align: center;
     padding: 15px;
-    margin: 0;
+    margin: 0 0 8px;
+    border-bottom: 3px solid black;
   }
   h2 {
     font-size: 30px;
+    margin-top: 15px;
     padding-left: 10px;
   }
   ul {
@@ -22,9 +27,23 @@
     text-decoration: none;
   }
   .toggle {
-    margin-left: 5px;
     position: absolute;
-    right: 15px;
+    right: 23px;
+    transition-duration: 0.4s;
+    font-size: 12px;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 2px 20px 2px;
+    background-color: white;
+  }
+  .toggle:hover {
+    background-color: black;
+    color: white;
+  }
+  #websites {
+    padding-bottom: 5px;
+    border-bottom: 3px solid black;
   }
   #websiteList {
     display: grid;
@@ -53,6 +72,8 @@
     }
     #websites {
       margin-right: 10px;
+      padding-bottom: 0;
+      border-bottom: none;
     }
     #websiteList {
       display: grid;
