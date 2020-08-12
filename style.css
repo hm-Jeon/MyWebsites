@@ -8,7 +8,7 @@
     font-size: 45px;
     text-align: center;
     padding: 15px;
-    margin: 0 0 8px;
+    margin: 0;
     border-bottom: 3px solid black;
   }
   h2 {
@@ -31,10 +31,10 @@
     right: 23px;
     transition-duration: 0.4s;
     font-size: 12px;
-    border-width: 3px;
-    border-color: black;
+    margin-top: 8px;
     border-radius: 5px;
-    padding: 2px 20px 2px;
+    border: 3px solid black;
+    padding: 2px 20px;
     background-color: white;
   }
   .toggle:hover {
@@ -46,6 +46,10 @@
     border-bottom: 3px solid black;
   }
   #websiteList {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  #videoList {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
@@ -61,7 +65,7 @@
     width: 100%;
     height: 100%;
   }
-  #websites ul {
+  ul {
     margin-top: 0;
   }
 
@@ -79,7 +83,8 @@
       display: grid;
       grid-template-columns: 1fr 1.5fr;
     }
-    #websites ul {
-      margin-bottom: 35px;
+    #videoList {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
     }
   }

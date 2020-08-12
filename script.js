@@ -22,9 +22,7 @@ var button = {
     $(".toggle").hover(function(){
       $(this).css("backgroundColor", bgcolor);
       $(this).css("color", color);
-      if($('.toggle').val() == 'Day') {
-        $(this).css("borderColor", color);
-      }
+      $(this).css("borderColor", bgcolor);
     },
     function(){
       $(this).css("background-color", color);
